@@ -38,8 +38,7 @@ const Search = () => {
     }
   }, [debouncedTerm]);
 
-  useEffect(() => {}, [term, results.length]);
-
+  
   const renderedResults = results.map((result) => {
     return (
       <div key={result.pageid} className="item">
